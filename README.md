@@ -4,7 +4,7 @@ Your challenge is to build out this comments section in HTML and CSS and get it 
 
 ![Design preview for the Interactive comments section coding challenge](./design/desktop-design.jpg)
 
-Pay especially **careful attention to margin and padding**, and to **alignment**. The app should cohesive, but not claustrophobic.
+Pay especially **careful attention to margin and padding**, and to **alignment**. The app should be cohesive, but not claustrophobic.
 
 See [./design/desktop-design.jpg](./design/desktop-design.jpg). Icons and images are located in [./images/](./images/).
 

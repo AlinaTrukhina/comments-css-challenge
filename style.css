@@ -1,0 +1,73 @@
+* {box-sizing: border-box}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(228, 33%, 97%);
+}
+
+#commentSection {
+    width:75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    background-color: white;
+    margin: 10px;
+}
+
+.commentreplysection {
+    display: flex;
+}
+
+.commentreply {
+    display: flex;
+    justify-content: center;
+}
+
+.replycomments {
+    width: 75%;
+    flex-direction: column;
+}
+
+.verticalline {
+    border-left: 2px solid hsl(223, 19%, 93%);
+    width: 25%;
+    height:fit-content;
+    position: relative;
+    left: 12.5%;
+    margin-left: -1px;
+    top: 0;
+}
+
+.profilepic {
+    width: 15px;
+}
+
+.name {
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+}
+
+.topcontainer {
+    display: flex;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.nameLink {
+    color: hsl(238, 40%, 52%);
+}
+
+.buttonLink {
+    font-family: 'Rubik', sans-serif;
+}
