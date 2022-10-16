@@ -17,10 +17,31 @@ body {
 .comment {
     background-color: white;
     margin: 10px;
+    border-radius: 5px;
 }
 
 .commentreplysection {
     display: flex;
+}
+
+.addComment {
+    display: flex;
+    margin: 10px;
+    background-color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+    text-align: start;
+}
+
+input[type='text']::placeholder {
+    text-align: start;
+}
+
+#commentInput {
+    border: solid 1px hsl(223, 19%, 93%);
+    border-radius: 5px;
+    width: 75%;
+    height: 2cm;
 }
 
 .commentreply {
@@ -45,6 +66,7 @@ body {
 
 .profilepic {
     width: 15px;
+    height: 15px;
 }
 
 .name {

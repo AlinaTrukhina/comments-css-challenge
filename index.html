@@ -69,7 +69,12 @@
       </div>
     <div class="replycomments">
       <div class="comment">
-        <div class="score">4</div>
+        
+        <div class="score">
+          <img alt="plus" src="./images/icon-plus.svg" />
+          4
+          <img alt="minus" src="./images/icon-minus.svg" />
+        </div>
         <div class="topcontainer">
           <img class="profilepic" src="./images/avatars/image-ramsesmiron.png" alt="profile" />
           <div class="name">ramsesmiron</div>  
@@ -88,7 +93,11 @@
     <!-- Comment #4 (Reply to comment #2) -->
   
       <div class="comment">
-        <div class="score">2</div>
+        <div class="score">
+          <img alt="plus" src="./images/icon-plus.svg" />
+          2
+          <img alt="minus" src="./images/icon-minus.svg" />
+        </div>
         
         <div class="topcontainer">
           <img class="profilepic" src="./images/avatars/image-juliusomo.png" alt="profile" />      
@@ -109,9 +118,13 @@
       </div>
     </div>
 
+
+    </div>
     <div class="addComment">
       <img class="profilepic" src="./images/avatars/image-juliusomo.png" alt="profile" />  
-    </div>
+      <input id="commentInput" type="text" name="name" required
+      minlength="1" placeholder="Add a comment...">
+      <button class="sendButton" type="button">SEND</button>
     </div>
   </section>
   
