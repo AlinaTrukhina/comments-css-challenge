@@ -6,18 +6,51 @@ body {
     margin: 0;
     padding: 0;
     background-color: hsl(228, 33%, 97%);
+    font-family: 'Rubik';
 }
 
 #commentSection {
-    width:75%;
+    margin: auto;
+    width: 75%;
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 .comment {
+
+    gap: 5px;
+    
     background-color: white;
     margin: 10px;
     border-radius: 5px;
+}
+
+.topcontainer {
+    display: block;
+    justify-content: space-between;
+    position: relative;
+}
+
+.you {
+    color: white;
+    background-color:  hsl(238, 40%, 52%);
+    font-family: 'Rubik', sans-serif;
+    height: 1.1em;
+}
+
+.score {
+    height: fit-content;
+    width: 40px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: hsl(212, 24%, 26%);
+    background-color: hsl(223, 19%, 93%);
+    text-align: center;
 }
 
 .commentreplysection {
@@ -65,8 +98,8 @@ input[type='text']::placeholder {
 }
 
 .profilepic {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
 }
 
 .name {
@@ -88,8 +121,35 @@ input[type='text']::placeholder {
 
 .nameLink {
     color: hsl(238, 40%, 52%);
+    display: inline;
 }
 
 .buttonLink {
     font-family: 'Rubik', sans-serif;
+}
+
+.sendButton {
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    height: fit-content;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+}
+
+.replyLink {
+    float: inline-end;
+    font-family: 'Rubik', sans-serif;
+    color: hsl(212, 24%, 26%);
+}
+
+.deleteLink {
+    float: inline-end;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+.deleteLink a {
+    color: hsl(358, 79%, 66%);
+    font-weight: bold;
 }
