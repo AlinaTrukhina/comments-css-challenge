@@ -42,6 +42,8 @@ body {
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
+    max-height: 30px;
+    overflow: hidden;
 }
 
 .nameContainer {
@@ -84,6 +86,8 @@ body {
 
 .commentreplysection {
     display: flex;
+    border-left: 1px solid hsl(223, 19%, 93%);
+    margin-left: 12.4%;
 }
 
 .addComment {
@@ -121,18 +125,18 @@ input[type='text']::placeholder {
 }
 
 .replycomments {
-    width: 75%;
+    width: 100%;
 }
 
-.verticalline {
+/* .verticalline {
     border-left: 2px solid hsl(223, 19%, 93%);
     width: 25%;
-    height:fit-content;
+    height: fit-content;
     position: relative;
     left: 12.5%;
     margin-left: -1px;
     top: 0;
-}
+} */
 
 .profilepic {
     width: 40px;
@@ -194,10 +198,18 @@ input[type='text']::placeholder {
     margin: 0px 10px;
 }
 
+.sendButton:hover {
+    background-color: hsl(238, 40%, 80%);
+}
+
 .replyLink {
     float: inline-end;
     color: hsl(212, 24%, 26%);
     font-weight: bold;
+}
+
+.replyLink:hover {
+    color: hsl(212, 24%, 50%);
 }
 
 .deleteLink a {
@@ -206,9 +218,14 @@ input[type='text']::placeholder {
     margin-right: 5px;
 }
 
+.deleteLink a:hover {
+    color: hsl(358, 79%, 86%);
+}
+
 #deleteBtn {
     background-color: white;
     border: 0px;
+    margin-left: -5px;
 }
 
 .editLink {
@@ -231,11 +248,11 @@ p {
     display: inline;
 }
 
-:modal {
+#deleteDialog:modal {
     background-color: white;
     border-radius: 10px;
 }
 
 dialog::backdrop {
-    background: rgba(255, 0, 0, 0.25);
+    background-color: rgba(255, 0, 0, 0.25);
 }
