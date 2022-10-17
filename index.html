@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+  <script src="./scripts.js"></script>
   <link rel="stylesheet" href="style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -122,7 +124,7 @@
           <div class="buttonContainer">
             <div class="buttonLink deleteLink">
               <img alt="delete" src="./images/icon-delete.svg" />
-              <a href="">Delete</a>
+              <button id="deleteBtn"><a href="">Delete</a></button>
             </div>
             <div class="buttonLink editLink">
               <img alt="edit" src="./images/icon-edit.svg" />
@@ -146,11 +148,25 @@
       <button class="sendButton" type="button">SEND</button>
     </div>
   </section>
-  
+
+  <dialog id="deleteDialog">
+    <form method="dialog">
+      <button id="cancelBtnModal" class="modalBtn">
+        NO, CANCEL
+      </button>
+
+      <button id="deleteBtnModal" class="modalBtn">
+        YES, DELETE
+      </button>
+    </form>
+  </dialog>
+
   <div class="attribution">
     Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Alina Trukhina</a>.
   </div>
+
+
 
 </body>
 </html>

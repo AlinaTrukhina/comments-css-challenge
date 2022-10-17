@@ -19,16 +19,21 @@ body {
 
 .comment {
     display: block;
+    height: 150px;
     padding: 10px;
     gap: 5px;
     background-color: white;
     margin: 10px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .commenttext {
     margin-left: 60px;
     color: hsl(211, 10%, 45%);
+    overflow: hidden;
+    padding: 10px;
+    height: 120px;
 }
 
 .topcontainer {
@@ -52,18 +57,18 @@ body {
 }
 
 .you {
-    padding: 1px 2px;
+    padding: 2px 4px;
     margin: 0px 5px 0px 0px;
     color: white;
     background-color:  hsl(238, 40%, 52%);
     font-family: 'Rubik', sans-serif;
-    font-size: 0.9em;
-    height: 1.2em;
+    font-size: 0.8em;
+    height: 1.5em;
     border-radius: 2px;
 }
 
 .score {
-    height: 80px;
+    height: 100px;
     width: 40px;
     margin: 10px 10px;
     padding: 10px;
@@ -96,6 +101,7 @@ input[type='text']::placeholder {
 }
 
 #commentInput {
+    margin-left: 10px;
     border: solid 1px hsl(223, 19%, 93%);
     border-radius: 5px;
     width: 75%;
@@ -103,13 +109,19 @@ input[type='text']::placeholder {
 }
 
 .commentreply {
-    display: flex;
-    justify-content: center;
+
+    display: block;
+    height: 140px;
+    padding: 10px;
+    gap: 5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .replycomments {
     width: 75%;
-    flex-direction: column;
 }
 
 .verticalline {
@@ -191,6 +203,12 @@ input[type='text']::placeholder {
 .deleteLink a {
     color: hsl(358, 79%, 66%);
     font-weight: bold;
+    margin-right: 5px;
+}
+
+#deleteBtn {
+    background-color: white;
+    border: 0px;
 }
 
 .editLink {
@@ -211,4 +229,13 @@ img {
 
 p {
     display: inline;
+}
+
+:modal {
+    background-color: white;
+    border-radius: 10px;
+}
+
+dialog::backdrop {
+    background: rgba(255, 0, 0, 0.25);
 }
