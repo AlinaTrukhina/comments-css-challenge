@@ -18,37 +18,61 @@ body {
 }
 
 .comment {
-
+    display: block;
+    padding: 10px;
     gap: 5px;
-    
     background-color: white;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.commenttext {
+    margin-left: 60px;
+    color: hsl(211, 10%, 45%);
 }
 
 .topcontainer {
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
     justify-content: space-between;
-    position: relative;
+}
+
+.nameContainer {
+    display: inline-flex;
+    padding: 0px 5px;
+    align-items: center;
+}
+
+.buttonContainer {
+    display: inline-flex;
+    padding: 0px 5px;
+    align-items: center;
 }
 
 .you {
+    padding: 1px 2px;
+    margin: 0px 5px 0px 0px;
     color: white;
     background-color:  hsl(238, 40%, 52%);
     font-family: 'Rubik', sans-serif;
-    height: 1.1em;
+    font-size: 0.9em;
+    height: 1.2em;
+    border-radius: 2px;
 }
 
 .score {
-    height: fit-content;
+    height: 80px;
     width: 40px;
     margin: 10px 10px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
     float: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    color: hsl(212, 24%, 26%);
+    justify-content: space-between;
+    color: hsl(238, 40%, 52%);
     background-color: hsl(223, 19%, 93%);
     text-align: center;
 }
@@ -62,12 +86,13 @@ body {
     margin: 10px;
     background-color: white;
     padding:10px 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: start;
 }
 
 input[type='text']::placeholder {
-    text-align: start;
+    vertical-align:text-top;
+    padding-left: 5px;
 }
 
 #commentInput {
@@ -98,23 +123,35 @@ input[type='text']::placeholder {
 }
 
 .profilepic {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .name {
+    padding: 0px 5px;
+    margin: 5px;
     font-weight: bold;
     font-family: 'Rubik', sans-serif;
 }
 
+.time {
+    color: hsl(211, 10%, 45%);
+}
+
 .topcontainer {
     display: flex;
+    align-items: center;   
+}
+
+.topcontainer a {
+    padding-top: 5px;
 }
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
@@ -125,7 +162,14 @@ input[type='text']::placeholder {
 }
 
 .buttonLink {
+    display: flex;
+    align-content: flex-start;
     font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.buttonLink a {
+    text-decoration: none;
 }
 
 .sendButton {
@@ -140,16 +184,31 @@ input[type='text']::placeholder {
 
 .replyLink {
     float: inline-end;
-    font-family: 'Rubik', sans-serif;
     color: hsl(212, 24%, 26%);
-}
-
-.deleteLink {
-    float: inline-end;
-    font-family: 'Rubik', sans-serif;
     font-weight: bold;
 }
+
 .deleteLink a {
     color: hsl(358, 79%, 66%);
     font-weight: bold;
+}
+
+.editLink {
+    float: inline-end;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: hsl(212, 24%, 26%);
+}
+
+.editLink a {
+    color: hsl(212, 24%, 26%);
+    font-weight: bold;
+}
+
+img {
+    padding: 5px;
+}
+
+p {
+    display: inline;
 }
